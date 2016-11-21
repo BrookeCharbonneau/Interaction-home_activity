@@ -93,7 +93,7 @@ summary(simple.slope.minus.1SD)
 library(MBESS)
 sd.x <- sd(analytic.data$x.centered, na.rm=TRUE)
 intr.plot(b.0=47.04877,b.x=15.011113,b.z=9.45285,b.xz=22.60574,
-          x.min=-2*sd.x,x.max=2*sd.x,z.min=-2*sd.z,z.max=2*sd.z,
+          x.min=-1*sd.x,x.max=1*sd.x,z.min=-1*sd.z,z.max=1*sd.z,
           xlab="Anxiety Centered",zlab="Preparation Centered",ylab="Exam Score",
           expand=1,hor.angle=60,gray.scale=TRUE, line.wd=4,zlim=c(0,100)) 
 
@@ -107,8 +107,8 @@ intr.plot(b.0=47.04877,b.x=15.011113,b.z=9.45285,b.xz=22.60574,
 
 sd.x <- sd(analytic.data$x.centered, na.rm=TRUE)
 
-#graph from -1SD on Anxiety to +1SD Anxiety for a given level of Prepartion (+/-2 SD)
-x.axis.range <-seq(-2*sd.x,2*sd.x,by=.25*sd.x) #this indicates range on the x-axis -2SD to +2SD Anxiety
+#graph from -1SD on Anxiety to +1SD Anxiety for a given level of Prepartion (+/-1 SD)
+x.axis.range <-seq(-1*sd.x,1*sd.x,by=.25*sd.x) #this indicates range on the x-axis -2SD to +2SD Anxiety
 
 
 # 2D Graph Lines for +1 SD on Prep and -1SD on Prep
